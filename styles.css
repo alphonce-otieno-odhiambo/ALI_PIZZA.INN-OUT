@@ -2,3 +2,11 @@
     width: 200%;
     height: 500px;
 }
+
+.heading1 {
+    position: absolute;
+    top: 0%;
+    content: center;
+    align-content: center;
+    color: #f0f8ff;
+}
