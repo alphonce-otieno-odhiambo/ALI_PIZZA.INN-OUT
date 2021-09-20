@@ -19,7 +19,7 @@
             <img src="https://media.istockphoto.com/photos/pizza-with-cheese-pepperoni-chicken-and-pepper-a-slice-for-a-gourmet-picture-id1128630742?k=20&m=1128630742&s=612x612&w=0&h=hUN_PveuifOLZFmuq3CWct6ygrt5pN5RRwiDY2W98cQ=" alt="pizza image" id="pizza1">
         </div>
         <div class="heading1">
-            <h1 style="text-align: center;"> ALI_PIZZA.IN/OUT</h1>
+            <h1 style="text-align: center;color:rgb(0, 0, 0)"> ALI_PIZZA.IN/OUT</h1>
             <h2 style="text-align: center;">WELCOME TO ALI_PIZZA, THE BEST AMONG ALL</h2>
             <P>We offer the best taste of all that suit your curiosity to fullfillment.<br>As one of your best choice there are more services we offer. </P>
             <p>Some of the services we offer include</p>
@@ -37,23 +37,27 @@
                 <br>
                 <h3><span>MAKE YOUR ORDERS NOW!</span></h3>
                 <form for="/action_page.php" id="form-table1">
-                    <h4>TYPE OF PIZZA</h4>
-                    <label for="type-of-pizza">
+                    <h4 style="color: green;background-color: honeydew;font-size: 1rem;border-width: 2%;">TYPE OF PIZZA</h4>
+                    <div id="show-pizza-type"></div>
+                    <div id="type-pizza">
+
+                        <label for="type-of-pizza">
                         <input type="checkbox" name="check-box" id="cheese" value="cheese">cheese pizza
                     </label>
-                    <br>
-                    <label for="type-of-pizza">
+                        <br>
+                        <label for="type-of-pizza">
                         <input type="checkbox" name="check-box" id="veggie" value="veggie">veggie pizza
                     </label>
-                    <br>
-                    <label for="type-of-pizza">
+                        <br>
+                        <label for="type-of-pizza">
                         <input type="checkbox" name="check-box" id="pepperoni" value="pepperoni">pepperoni pizza
                     </label>
-                    <br>
-                    <label for="type-of-pizza">
+                        <br>
+                        <label for="type-of-pizza">
                         <input type="checkbox" name="check-box" id="BBQ" value="BBQ">BBQ chicken pizza
                     </label>
-                    <br>
+                        <br>
+                    </div>
                 </form>
                 <form action="/action_page.php" id="form-table2">
                     <h5><i>PICK YOUR SIZE</i></h5>
@@ -121,7 +125,7 @@
                             <label for="button">
                                 <input type="button" id="cost" value="Total cost">
                             </label>
-                            <label for="button">submit your order
+                            <label for="button">submit your order:
                                 <input type="submit" id="order" name="submit" value="Order">
                             </label>
                         </div>
