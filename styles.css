@@ -9,3 +9,20 @@ body {
     width: 70px;
     left: 70%;
 }
+
+h1 {
+    background-color: cornflowerblue;
+    font-size: 20rem;
+    text-shadow: darkgreen;
+    font-family: lucida Sans;
+}
+
+#type-pizza {
+    display: none;
+}
+
+#sizes {
+    color: darkblue;
+    display: none;
+    scroll-padding: bottom;
+}
