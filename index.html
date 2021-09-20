@@ -36,7 +36,7 @@
                 <p>To experience our services anywhere you are located, you can make your orders and pay Online.</p>
                 <br>
                 <h3><span>MAKE YOUR ORDERS NOW!</span></h3>
-                <form for="/action_page.php" class="form-table">
+                <form for="/action_page.php" id="form-table1">
                     <h4>TYPE OF PIZZA</h4>
                     <label for="type-of-pizza">
                         <input type="checkbox" name="check-box" id="cheese" value="cheese">cheese pizza
@@ -54,10 +54,22 @@
                         <input type="checkbox" name="check-box" id="BBQ" value="BBQ">BBQ chicken pizza
                     </label>
                     <br>
-
-
-
-
+                </form>
+                <form action="/action_page.php" id="form-table2">
+                    <h5><i>PICK YOUR SIZE</i></h5>
+                    <div id="sizes">
+                        <label for="size-of-piza">
+                            <input type="checkbox" name="check-box" id="large" value="large">large
+                        </label>
+                        <br>
+                        <label for="size-of-piza">
+                            <input type="checkbox" name="check-box" id="medium" value="Medium">Medium
+                        </label>
+                        <br>
+                        <label for="size-of-piza">
+                            <input type="checkbox" name="check-box" id="small" value="small">Small
+                        </label>
+                    </div>
                 </form>
             </div>
         </section>
