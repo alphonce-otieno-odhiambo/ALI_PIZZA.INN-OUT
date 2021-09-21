@@ -1,24 +1,20 @@
-$(document).ready(function() {
-    $("button").click(function() {
-        $("#type-pizza").show();
-    });
-    $("#form-table1").click(function() {
-        $("#type-pizza").show();
-    });
+function pizzaPrice(size, crust, topping) {
+    this.size = size
+    this.crust = crust
+    this.topping = topping
+}
 
-});
 $(document).ready(function() {
-    $("#form-table2").click(function() {
-        $("#sizes").slideDown();
-    });
-});
-$(document).ready(function() {
-    var str = "";
+    $("form").submit(function(event) {
+        event.preventDefault();
 
-    $(':checkbox').each(function() {
-        str += this.checked ? "1," : "0,";
-    });
+        let pizzaSize = parseInt($("input:radio[name=size]:checked").val());
+        let pizzaCrust = parseInt($("input:radio[name=crust]:checked").val());
+        let pizzaTopping = [];
+        $.each($("input:checkbox[name=topping]:checked"), function() {
+            pizzaTopping.push(parseInt($(this).val()));
+        });
 
-    str = str.substr(0, str.length - 1); //Remove the trailing comma
+    });
 
 });
