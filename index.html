@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALI-PIZZA-WEBSITE</title>
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
+
+
+
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container border p-5">
         <div class="pizza-img1">
             <img src="https://media.istockphoto.com/photos/pizza-with-cheese-pepperoni-chicken-and-pepper-a-slice-for-a-gourmet-picture-id1128630742?k=20&m=1128630742&s=612x612&w=0&h=hUN_PveuifOLZFmuq3CWct6ygrt5pN5RRwiDY2W98cQ=" alt="pizza image" id="pizza1">
         </div>
@@ -37,108 +41,112 @@
                 <br>
                 <h3><span>MAKE YOUR ORDERS NOW!</span></h3>
                 <div class="row align-items-start">
-                    <form action="/action_page.php" id="overal-form">
+                    <div class="col-md-3">
+                        <form action="/action_page.php" class="overal-form border p-6 m-2 color blue">
 
 
-                        <div class="col-md-3">
+
                             TYPE OF PIZZA
                             <div id="type-pizza">
                                 <label for="type-of-pizza">
-                        <input type="checkbox" name="check-box" id="cheese" value="cheese">cheese pizza
+                        <input type="radio" name="type" id="cheese" value="cheese">cheese pizza
                     </label>
                                 <br>
                                 <label for="type-of-pizza">
-                        <input type="checkbox" name="check-box" id="veggie" value="veggie">veggie pizza
+                        <input type="radio" name="type" id="veggie" value="veggie">veggie pizza
                     </label>
                                 <br>
                                 <label for="type-of-pizza">
-                        <input type="checkbox" name="check-box" id="pepperoni" value="pepperoni">pepperoni pizza
+                        <input type="radio" name="type" id="pepperoni" value="pepperoni">pepperoni pizza
                     </label>
                                 <br>
                                 <label for="type-of-pizza">
-                        <input type="checkbox" name="check-box" id="BBQ" value="BBQ">BBQ chicken pizza
+                        <input type="radio" name="type" id="BBQ" value="BBQ">BBQ chicken pizza
                     </label>
                                 <br>
                             </div>
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <h5>
+                            <bold>PICK YOUR SIZE</bold>
+                        </h5>
+                        <div id="sizes">
+                            <label for="size-of-piza">
+                            <input type="radio" name="size" id="large" value="1300">large
+                        </label>
+                            <br>
+                            <label for="size-of-piza">
+                            <input type="radio" name="size" id="medium" value="800">Medium
+                        </label>
+                            <br>
+                            <label for="size-of-piza">
+                            <input type="radio" name="size" id="small" value="600">Small
+                        </label>
                         </div>
-                        <div class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
 
 
-                            <h5><i style="background-size: 10px 20px;"><bold>PICK YOUR SIZE</bold></i></h5>
-                            <div id="sizes">
-                                <label for="size-of-piza">
-                            <input type="checkbox" name="check-box" id="large" value="large">large
+                        <h5>CRUST LIKED</h5>
+                        <div id="crusts">
+                            <label for="crust-liked">
+                            <input type="radio" name="crust" id="crispy" value="400">crispy
                         </label>
-                                <br>
-                                <label for="size-of-piza">
-                            <input type="checkbox" name="check-box" id="medium" value="Medium">Medium
+                            <br>
+                            <label for="crust-liked">
+                            <input type="radio" name="crust" id="glitter free" value="500">glitter free
                         </label>
-                                <br>
-                                <label for="size-of-piza">
-                            <input type="checkbox" name="check-box" id="small" value="small">Small
+                            <br><label for="crust-liked">
+                            <input type="radio" name="crust" id="staffed" value="400">staffed
                         </label>
-                            </div>
+                            <br>
                         </div>
-                        <div class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
 
+                        <h4><em>TOPPINGS PREFFERED</em></h4>
+                        <div id="toppings">
+                            <label for="toppings">
+                            <input type="checkbox" name="topping" id="black-olives" value="600">blac olives
+                        </label>
+                            <br>
+                            <label for="toppings">
+                            <input type="checkbox" name="topping" id="onions" value="200">onions
+                        </label>
+                            <br>
+                            <label for="toppings">
+                            <input type="checkbox" name="topping" id="bacons" value="300">bacons
+                        </label>
 
-                            <h5>CRUST LIKED</h5>
-                            <div id="crusts">
-                                <label for="crust-liked">
-                            <input type="checkbox" name="check-box" id="crispy" value="crispy">crispy
-                        </label>
-                                <br>
-                                <label for="crust-liked">
-                            <input type="checkbox" name="check-box" id="glitter free" value="glitter free">glitter free
-                        </label>
-                                <br><label for="crust-liked">
-                            <input type="checkbox" name="check-box" id="staffed" value="staffed">staffed
-                        </label>
-                                <br>
-                            </div>
                         </div>
-                        <div class="col-md-3">
-
-                            <h4><em>TOPPINGS PREFFERED</em></h4>
-                            <div id="toppings">
-                                <label for="toppings">
-                            <input type="checkbox" name="check-box" id="black-olives" value="blac-olives">blac olives
-                        </label>
-                                <br>
-                                <label for="toppings">
-                            <input type="checkbox" name="check-box" id="onions" value="onions">onions
-                        </label>
-                                <br>
-                                <label for="toppings">
-                            <input type="checkbox" name="check-box" id="bacons" value="bacons">bacons
-                        </label>
-
-                            </div>
-                        </div>
-                        <br>
-                        <div class="col-md-3">
+                    </div>
+                    <br>
+                    <div class="col-md-3">
 
 
-                            <div id="orders">
-                                <label for="numbers">number of orders
+                        <div id="orders">
+                            <label for="numbers">number of orders
                                 <input type="number" name="number" id="pizza-number" max="50" min="1">
                             </label>
-                                <br>
-                                <h5>Place to be delivered</h5>
-                                <label for="location">location
+                            <br>
+                            <h5>Place to be delivered</h5>
+                            <label for="location">location
                                 <input type="text" name="text" id="location">
                             </label>
-                                <br><br>
-                                <label for="button">
-                                <input type="button" id="cost" value="Total cost">
+                            <br><br>
+                            <label for="button">
+                                <input type="button" id="cost">
                             </label>
-                                <label for="button">submit your order:
-                                <input type="submit" id="order" name="submit" value="Order">
-                            </label>
-                            </div>
+
                         </div>
+                    </div>
 
                     </form>
+                    <label for="button">submit your order:
+                        <input type="submit" id="order" name="submit" value="Order">
+                    </label>
                 </div>
             </div>
     </div>
@@ -147,6 +155,12 @@
     </section>
 
     </div>
+    <script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=”anonymous”></script>
+
+    <script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
+
+
+
 
 
 </body>
