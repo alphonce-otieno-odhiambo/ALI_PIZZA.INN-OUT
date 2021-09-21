@@ -36,106 +36,119 @@
                 <p>To experience our services anywhere you are located, you can make your orders and pay Online.</p>
                 <br>
                 <h3><span>MAKE YOUR ORDERS NOW!</span></h3>
-                <form for="/action_page.php" id="form-table1">
-                    TYPE OF PIZZA
-                    <div id="type-pizza">
-                        <label for="type-of-pizza">
+                <div class="row align-items-start">
+                    <form action="/action_page.php" id="overal-form">
+
+
+                        <div class="col-md-3">
+                            TYPE OF PIZZA
+                            <div id="type-pizza">
+                                <label for="type-of-pizza">
                         <input type="checkbox" name="check-box" id="cheese" value="cheese">cheese pizza
                     </label>
-                        <br>
-                        <label for="type-of-pizza">
+                                <br>
+                                <label for="type-of-pizza">
                         <input type="checkbox" name="check-box" id="veggie" value="veggie">veggie pizza
                     </label>
-                        <br>
-                        <label for="type-of-pizza">
+                                <br>
+                                <label for="type-of-pizza">
                         <input type="checkbox" name="check-box" id="pepperoni" value="pepperoni">pepperoni pizza
                     </label>
-                        <br>
-                        <label for="type-of-pizza">
+                                <br>
+                                <label for="type-of-pizza">
                         <input type="checkbox" name="check-box" id="BBQ" value="BBQ">BBQ chicken pizza
                     </label>
-                        <br>
-                    </div>
-                </form>
-                <form action="/action_page.php" id="form-table2">
-                    <h5><i style="background-size: 10px 20px;"><bold>PICK YOUR SIZE</bold></i></h5>
-                    <div id="sizes">
-                        <label for="size-of-piza">
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+
+                            <h5><i style="background-size: 10px 20px;"><bold>PICK YOUR SIZE</bold></i></h5>
+                            <div id="sizes">
+                                <label for="size-of-piza">
                             <input type="checkbox" name="check-box" id="large" value="large">large
                         </label>
-                        <br>
-                        <label for="size-of-piza">
+                                <br>
+                                <label for="size-of-piza">
                             <input type="checkbox" name="check-box" id="medium" value="Medium">Medium
                         </label>
-                        <br>
-                        <label for="size-of-piza">
+                                <br>
+                                <label for="size-of-piza">
                             <input type="checkbox" name="check-box" id="small" value="small">Small
                         </label>
-                    </div>
-                </form>
-                <form action="/action_page.php" id="form-table3">
-                    <h5>CRUST LIKED</h5>
-                    <div id="crusts">
-                        <label for="crust-liked">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+
+                            <h5>CRUST LIKED</h5>
+                            <div id="crusts">
+                                <label for="crust-liked">
                             <input type="checkbox" name="check-box" id="crispy" value="crispy">crispy
                         </label>
-                        <br>
-                        <label for="crust-liked">
+                                <br>
+                                <label for="crust-liked">
                             <input type="checkbox" name="check-box" id="glitter free" value="glitter free">glitter free
                         </label>
-                        <br><label for="crust-liked">
+                                <br><label for="crust-liked">
                             <input type="checkbox" name="check-box" id="staffed" value="staffed">staffed
                         </label>
-                        <br>
-                    </div>
-                </form>
-                <form action="/action_page.php" id="form-table4">
-                    <h4><em>TOPPINGS PREFFERED</em></h4>
-                    <div id="toppings">
-                        <label for="toppings">
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+                            <h4><em>TOPPINGS PREFFERED</em></h4>
+                            <div id="toppings">
+                                <label for="toppings">
                             <input type="checkbox" name="check-box" id="black-olives" value="blac-olives">blac olives
                         </label>
-                        <br>
-                        <label for="toppings">
+                                <br>
+                                <label for="toppings">
                             <input type="checkbox" name="check-box" id="onions" value="onions">onions
                         </label>
-                        <br>
-                        <label for="toppings">
+                                <br>
+                                <label for="toppings">
                             <input type="checkbox" name="check-box" id="bacons" value="bacons">bacons
                         </label>
-                        <br>
-                        <label for="toppings">
-                            <input type="checkbox" name="check-box" id="mushroomss" value="mushrooms">mushrooms
-                        </label>
 
-                    </div>
-                    <form id="form-table4">
-                        <div id="orders">
-                            <label for="numbers">number of orders
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-3">
+
+
+                            <div id="orders">
+                                <label for="numbers">number of orders
                                 <input type="number" name="number" id="pizza-number" max="50" min="1">
                             </label>
-                            <br>
-                            <h5>Place to be delivered</h5>
-                            <label for="location">location
+                                <br>
+                                <h5>Place to be delivered</h5>
+                                <label for="location">location
                                 <input type="text" name="text" id="location">
                             </label>
-                            <br><br>
-                            <label for="button">
+                                <br><br>
+                                <label for="button">
                                 <input type="button" id="cost" value="Total cost">
                             </label>
-                            <label for="button">submit your order:
+                                <label for="button">submit your order:
                                 <input type="submit" id="order" name="submit" value="Order">
                             </label>
+                            </div>
                         </div>
+
                     </form>
-
-                </form>
+                </div>
             </div>
-        </section>
-
     </div>
 
     </div>
+    </section>
+
+    </div>
+
+
 </body>
 
 </html>
